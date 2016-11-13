@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <style media="screen">
+        .new-class {
+            font-size: 72px;
+        }
+        .other-class {
+            font-size: 32px;
+        }
+
+    </style>
+    
+
+</head>
+    <body ng-controller="HomeController">
+        <h1 class="new-class" ng-class="{'other-class': name=='Artur'}">Hello,
+            <span ng-if="name">({name})!</span>
+            <span ng-if="!name">World</span>
+            !
+        </h1>
+        <input type="text" ng-model="name" >
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" type="text/css" href="../static/semantic/out/semantic.min.css">
+        <script src="../static/semantic/out/semantic.min.js"></script>
+        <!-- Css Custon and Bootstrap Config -->
+        <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" type="text/css">
+        <link rel="stylesheet" href="../static/css/master.css" type="text/css" >
+        <link rel="stylesheet" href="../static/css/mdb.css">
+        <!-- AngularJS  -->
+        <script type="text/javascript" src="../static/js/angular.min.js"></script>
+        <script type="text/javascript" src="../static/js/app/app.module.js"></script>
+        <script type="text/javascript" src="../static/js/app/app.config.js"></script>
+        <script type="text/javascript" src="../static/js/app/app.controller.js"></script>
+    </body>
+</html>
