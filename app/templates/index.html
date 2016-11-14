@@ -6,29 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 
-    <style media="screen">
-        .new-class {
-            font-size: 72px;
-        }
-        .other-class {
-            font-size: 32px;
-        }
+    <style>.jumbotron {
+			width: 450px;
+			height: 430px;
+			margin-top: -20px;
+			margin-left: auto;
+			margin-right: auto;
+            padding:5px;
+		}
 
     </style>
     
 
 </head>
-    <body ng-controller="HomeController">
-        <h1 class="new-class" ng-class="{'other-class': name=='Artur'}">Hello,
-            <span ng-if="name">({name})!</span>
-            <span ng-if="!name">World</span>
-            !
-        </h1>
-        <input type="text" ng-model="name" >
+    <body style="background-size:cover;background: url('../static/img/bg.png') no-repeat left center;" ng-controller="HomeController">
+
+    <div class="jumbotron">
+        <center><h2>Bem vindo</h2></center><br>
+            <form class="ui small form">
+              <div class="fourteen wide field">
+                <label>Login</label>
+                <input type="text" name="first-name" placeholder="username">
+              </div>
+              <div class="fourteen wide field">
+                <label>Senha</label>
+                <input type="text" name="last-name" placeholder="password">
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Eu aceito os termos de uso.</label>
+                </div>
+              </div>
+              <center><button class="ui blue button" type="submit">GO</button><button class="ui loading blue button" href="/register">Registrar</button> </center>
+            </form>
+    </div>
 
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" type="text/css" href="../static/semantic/out/semantic.min.css">
-        <script src="../static/semantic/out/semantic.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../static/node_modules/semantic-ui/dist/semantic.min.css">
+        <script src="../static/node_modules/semantic-ui/dist/semantic.min.js"></script>
         <!-- Css Custon and Bootstrap Config -->
         <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" type="text/css">
