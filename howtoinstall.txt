@@ -1,0 +1,9 @@
+1- sudo apt-get install python-pip python-dev build-essential python-gevent python-webkit python-webkit-dev libgtk-3-dev gir1.2-webkit2-4.0
+      -  sudo pip install --upgrade pip
+      -  sudo pip install --upgrade virtualenv
+
+2- sudo pip -U -r install requirements.txt
+
+6- reboot
+
+7- sudo scp -r CHIP-Project/* root@chip.local:/home/chip/Desktop/Project/
